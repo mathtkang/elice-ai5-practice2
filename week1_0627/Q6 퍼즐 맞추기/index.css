@@ -1,0 +1,160 @@
+/* 아래 코드는 문제 해결을 위해 기본적으로 제공되는 코드입니다. 수정하지 마세요! */
+
+/* css 파일에서 문제를 풀기 전에, html 파일을 보면서 하나씩 뜯어보는 시간을 갖도록 하자! */
+* {
+  /* 별표: 모든 태그에 대해 아래의 속성을 대입하겠다! */
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* 여기 위는 보통 기본 set이라고 보시면 됩니다. 
+위에처럼 했기 때문에, 아래에서 조금씩만 바뀌고 따닥따닥 붙어있는걸 볼 수 있어요
+
+그리고 css의 우선순위는 맨 아래 작성한게 마지막 입력값이기 때문에, 위에 작성한건 잊어버리고 마지막 줄에 작성된게 적용됩니다.
+*/
+
+.head {
+  background-color: red;
+  width: 100%;
+  height: 20%;
+}
+
+.head #orangePiece {
+  background-color: orange;
+  width: 25%;
+  height: 100%;
+  /* 지시사항 1번을 하세요.
+  오른쪽 정렬을 하기 위해서는 어떤 속성을 사용해야할까요? */
+  float: right;
+}
+
+.head #yellowPiece {
+  background-color: yellow;
+  width: 25%;
+  height: 100%;
+  /* 지시사항 1번을 하세요. */
+  float: right;
+}
+
+main {
+  background-color: navy;
+  width: 100%;
+  height: 60%;
+}
+
+main #leftPiece {
+  background-color: blue;
+  width: 25%;
+  height: 50%;
+  /* 지시사항 2번을 하세요. */
+  float: left;
+}
+
+main #rightPiece {
+  background-color: green;
+  width: 25%;
+  height: 50%;
+  /* 지시사항 2번을 하세요. */
+  float: right;
+}
+
+main #purplePiece {
+  background-color: purple;
+  width: 100%;
+  height: 10%;
+  /* 지시사항 3번을 하세요. */
+  clear: both;
+}
+
+main #greenPiece {
+  background-color: green;
+  width: 100%;
+  height: 10%;
+}
+
+.foot {
+  background-color: black;
+  width: 100%;
+  height: 20%;
+}
+/* 원래라면 .foot으로 인해서 전체를 black으로 덮었는데, 그 위에 아래의 오랜지 엘로우 피스를 넣는 것이다.
+그래서 결과적으로 눈으로 볼 때는  */
+
+.foot #orangePiece {
+  background-color: orange;
+  width: 25%;
+  height: 100%;
+  /* 지시사항 4번을 하세요. */
+}
+
+.foot #yellowPiece {
+  background-color: yellow;
+  width: 25%;
+  height: 100%;
+  /* 지시사항 4번을 하세요. */
+}
+
+float: main {
+  background-color: navy;
+  width: 100%;
+  height: 60%;
+}
+
+main #leftPiece {
+  background-color: blue;
+  width: 25%;
+  height: 50%;
+  float: left;
+}
+
+main #rightPiece {
+  background-color: green;
+  width: 25%;
+  height: 50%;
+  float: right;
+}
+
+main #bluePiece {
+  background-color: blue;
+  width: 100%;
+  height: 10%;
+}
+
+main #greenPiece {
+  background-color: green;
+  width: 100%;
+  height: 10%;
+}
+
+main #purplePiece {
+  clear: both;
+  background-color: purple;
+  width: 100%;
+  height: 10%;
+}
+
+.foot {
+  background-color: black;
+  width: 100%;
+  height: 20%;
+}
+
+.foot #orangePiece {
+  background-color: orange;
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+
+.foot #yellowPiece {
+  background-color: yellow;
+  width: 25%;
+  height: 100%;
+  float: left;
+}
