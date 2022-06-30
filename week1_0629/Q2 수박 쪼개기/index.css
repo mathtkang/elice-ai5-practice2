@@ -21,6 +21,8 @@
     /* (step3) 수박에 줄을 그어주고 싶어요 ㅋㅋㅋ
     위에만 검은색으로 칠해지고 싶어요 */
     border-top-color: black;
+    /* (step4) 수박을 동그라미로 만들어줍시다. */
+
     /* border 에 대해서 더 자세히 알고싶다면? 블로그: https://developing-move.tistory.com/106*/
   }
 }
