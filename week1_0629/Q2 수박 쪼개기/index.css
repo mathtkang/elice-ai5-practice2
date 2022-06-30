@@ -1,0 +1,26 @@
+.watermelon {
+  width: 500px;
+  height: 500px;
+  background-color: green;
+}
+
+/* 변환될 때! 어디서부터 어디까지 (전제)라고 생각하면 됨 */
+@media (min-width: 100px) and (max-width: 500px) {
+  .watermelon {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+
+    /* (step1) 하위 속성  */
+    border-style: solid;
+    border-width: 10px;
+    /* 수박이 두꺼워: 30px 로 늘려주기 */
+    border-color: green;
+    /* (step2) 단축 속성  */
+    border: solid 10px green;
+    /* (step3) 수박에 줄을 그어주고 싶어요 ㅋㅋㅋ
+    위에만 검은색으로 칠해지고 싶어요 */
+    border-top-color: black;
+    /* border 에 대해서 더 자세히 알고싶다면? 블로그: https://developing-move.tistory.com/106*/
+  }
+}

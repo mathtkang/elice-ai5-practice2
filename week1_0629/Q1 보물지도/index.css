@@ -1,0 +1,44 @@
+/* 아래 코드는 문제 해결을 위해 기본적으로 제공되는 코드입니다. 수정하지 마세요! */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.map {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+/* 지시사항 2번과 3번을 참고하여 코드를 작성하세요. */
+
+.map:hover {
+  background-color: orange;
+  width: 200px;
+  height: 100px;
+}
+
+/* 
+[미디어쿼리]
+내부 style 처럼 하나의 태그 안에 묶어 넣어준 것 처럼 생각하면 됨
+반응형이기 떄문에, '조건'에 따라서 달라진다 */
+@media (min-width: 360px) and (max-width: 720px) {
+  .map {
+    background-color: blue;
+    transition: background-color 1.5s;
+    /* 
+    트렌지션: 뜻 자체가. 변화 전이 라는 뜻이 있는 만큼
+    어디에서 어떻게 변할거고, 얼마만큼의 시간이 걸리는지 명시해줘야한다.
+    (시간에 따라서 어떻게 달라지는지 같이 보기) */
+  }
+
+  /* 
+예를 들어 반응형, 너비에 따라서 트렌지션이 되는게 아니라 마우스가 올라갈 때 트렌시젼 되고 싶다! 라고 생각할 수도 있다.
+그럼 위와 같이 .map:hover를 미디어쿼리 밖에 설정해주면 된다.
+
+문제에서는 미디어 쿼리일 때 해달라고 했으니 아래와 같이 쿼리 안에서 hover를 설정하면 된다.
+ */
+
+  .map:hover {
+    background-color: orange;
+  }
+}

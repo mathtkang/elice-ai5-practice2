@@ -1,0 +1,90 @@
+/* 아래 코드는 문제 해결을 위해 기본적으로 제공되는 코드입니다. 수정하지 마세요! */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+.container .header {
+  height: 100px;
+  line-height: 100px;
+}
+
+#main article {
+  float: left;
+  width: 25%;
+  height: 200px;
+  text-align: center;
+}
+
+#main article.first_article {
+  background-color: #fbfbfb;
+}
+
+#main article.second_article {
+  background-color: #efeff6;
+}
+
+#main article.third_article {
+  background-color: #dcdcec;
+}
+
+#main article.fourth_article {
+  background-color: #cbcae3;
+}
+
+.footer {
+  padding-top: 15px;
+  text-align: center;
+  clear: both;
+  width: 100%;
+}
+
+/* 지시사항 2번과 3번을 참고하여 코드를 작성하세요. */
+@media (min-width: 320px) and (max-width: 1000px) {
+  .container {
+    width: 640px;
+  }
+
+  img {
+    width: 90%;
+  }
+
+  #main article {
+    width: 50%;
+    /* (질문)텍스트 중앙정렬 ? */
+    text-align: center;
+  }
+
+  .header {
+    text-align: center;
+  }
+  /* 지난번에 > 에 대해서 설명했었잖아요! 
+    >는 첫번째 자식이 아니라 그 직계자식을 뜻하는거였어요! 
+    만약 > 없이 자식을 하면 그 아래에 있는 직계자식 뿐만 아니라 손자손녀가 아티클 이라는 이름을 갖고 있으면 다 적용되는거죠! 이해되는지->핑 */
+  #main article.first_article {
+    background-color: #cbcae3;
+  }
+
+  #main article.second_article {
+    background-color: #dcdcec;
+  }
+
+  #main article.third_article {
+    background-color: #efeff6;
+  }
+
+  #main article.fourth_article {
+    background-color: #fbfbfb;
+  }
+}
+/* 우리가 작성한 부분은 media 쿼리이기 때문에 너비가 넓을 때는 변동이 없다.
+    너비가 줄어들 때 변경되는 것을 볼 수 있다. */
