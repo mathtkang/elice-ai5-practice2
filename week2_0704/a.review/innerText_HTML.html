@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- step1) -->
+    <div id="test">사과</div>
+    <!-- step2) -->
+    <div id="red">빨간색</div>
+    <script>
+    // step1)
+    document.querySelector("#test").innerHTML = "<h1>수박</h1>"; 
+    //   "큰 따옴표"안에 작성된 것들을 html 태그로 인식
+    // 이미 있는 div 태그를 없애고! 작성된 h1 태그를 위에 덧입힌다. 
+    // console 로 확인해보기!
+    document.querySelector("#test").innerText = "<h1>수박</h1>"; 
+  //   "큰 따옴표"안에 작성된 것들을 text로 인식
+
+
+    // step2)
+    document.getElementById("red").innerHTML = "<h1 style='color:red'>A</h1>"
+    document.getElementById("red").innerText = "<h1 style='color:red'>A</h1>"
+
+
+    </script>
+
+</body>
+</html>

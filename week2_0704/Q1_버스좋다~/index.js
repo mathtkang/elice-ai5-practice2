@@ -1,10 +1,4 @@
-/*
-숫자 변수를 선언하고, 데이터 400을 삽입하세요.
-문자열 변수를 선언하고, 데이터 “bus” 를 삽입하세요.
-문자열 변수를 선언하고, 데이터 “like” 를 삽입하세요.
-세 변수를 웹 화면에 출력하세요.
-*/
-
+// step1) 문제 풀기
 var number = 400
 var string1 = "bus"
 var string2 = "like"
@@ -12,6 +6,15 @@ var string2 = "like"
 document.write(number)
 document.write(string1)
 document.write(string2)
+
+// step2) 해당 문제까지 풀고, 웹의 개발자 도구 켜기
+// window -> 하고 결과를 보면 window객체에는 어떤 메서드들이 있는지 알 수 있다.
+
+
+
+// console.log()로도 표현해볼 수 있지 않을까?
+
+
 
 // dom 객체에 대해 설명 -> document.write : 화면에 보여주겠다!
 // js 에서는 ; 표시가 없어도 실행이 된다 but 좋은 코드는 아니다! (세미콜론 잊지말고 붙여주자!)

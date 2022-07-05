@@ -2,6 +2,8 @@ var td = document.querySelectorAll('td')
 var input = document.querySelector('input')
 var flag = false
 var resultCheck = false
+
+
 for(i=0; i<td.length; i++){
     td[i].onclick = function(e){
         if(e.target.innerText == '=') {

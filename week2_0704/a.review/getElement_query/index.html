@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="userForm">
+        <input id="username" type="text" value="Guilherme" />
+    </form>
+
+    <ul>
+        <li>HTML</li>
+
+        
+        <li class="active">CSS</li>
+        <li class="active">JavaScript</li>
+    </ul>
+      
+    <script>
+        //1. getElementById
+        var username = document.getElementById("username");
+        username.style.color='red';
+
+        //2. getElementsByTagName
+
+
+        var className = document.getElementsByClassName('active')
+        for (var i=0; i < className.length; i++){
+            className[i].style.color = 'red';
+        }
+    </script>
+</body>
+</html>
