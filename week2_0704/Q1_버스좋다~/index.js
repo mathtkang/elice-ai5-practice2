@@ -7,29 +7,17 @@ document.write(number)
 document.write(string1)
 document.write(string2)
 
-// step2) 해당 문제까지 풀고, 웹의 개발자 도구 켜기
-// window -> 하고 결과를 보면 window객체에는 어떤 메서드들이 있는지 알 수 있다.
+// step2) 개발자 도구에서
+// window 객체에는 어떤 메서드들이 있는지 알 수 있다.
+// console.log()에 익숙해지기
 
-
-
-// console.log()로도 표현해볼 수 있지 않을까?
-
-
-
-// dom 객체에 대해 설명 -> document.write : 화면에 보여주겠다!
-// js 에서는 ; 표시가 없어도 실행이 된다 but 좋은 코드는 아니다! (세미콜론 잊지말고 붙여주자!)
+// dom 객체에 대한 설명 -> document.write : 화면에 보여주겠다!
+// 세미콜론에 대한 생각: https://bakyeono.net/post/2018-01-19-javascript-use-semicolon-or-not.html
 
 // 띄어쓰기 없이 출력되는 것을 볼 수 있다.
 
 
-
-
-
-
-
-
-
-// var 로 하면 안되는 이유!
+// var로 하면 안되는 이유!
 // 예제) 
 // var num = 1;
 // console.log(num);

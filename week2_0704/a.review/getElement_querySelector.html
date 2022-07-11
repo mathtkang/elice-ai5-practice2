@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="userForm">
+        <input id="username" type="text" value="Guilherme" />
+    </form>
+
+    <ul>
+        <li>HTML</li>
+        <li class="active">CSS</li>
+        <li class="active">JavaScript</li>
+    </ul>
+      
+    <script>
+        // 1. getElementById
+        let idName = document.getElementById("username");
+        idName.style.color='red';
+
+        // 2. getElementsByClassName -> classname은 여러 개이기 때문에 element's'를 붙여준다. 배열처럼 보고 for문과 같이 사용한다.
+        let classNames = document.getElementsByClassName('active')
+        for (let i=0; i < tagName.length; i++){
+            tagName[i].style.color = 'red';
+        }
+        
+        //3. getElementsByTagName
+        let tagNames = document.getElementsByTagName("li");
+        for (let i=0; i < tagNames.length; i++){
+            var tagName = tagNames.item(i);
+            tagName.style.color = 'blue';
+        }
+
+        // for문 안에 i를 선언해줄 때는 var가 아닌 let을 사용해야한다!! (이유: https://fromnowwon.tistory.com/entry/for%EB%AC%B8-let)
+        // 그리고 각 for문 간의 범위가 다르기 때문에, let i=0을 여러번 사용해도 된다.
+
+        // 4. querySelector
+        
+    </script>
+</body>
+</html>

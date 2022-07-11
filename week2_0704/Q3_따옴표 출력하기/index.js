@@ -16,3 +16,6 @@ document.write('It\'s all right.<br>')
 document.write("seokyoung say \"it's all right!\"") // 큰 따옴표로 감싸서!
 document.write("<br>");
 document.write('seokyoung say \"it\'s all right!"') // 작은 따옴표로 감싸서!
+
+
+
