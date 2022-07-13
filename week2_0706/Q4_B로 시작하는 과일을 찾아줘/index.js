@@ -1,8 +1,7 @@
 const fruits = ['apple', 'banana', 'orange', 'blueberry', 'strawberry']
-var sum = 0; // b로 시작하는 과일의 개수를 저장하는 변수
+let sum = 0; // b로 시작하는 과일의 개수를 저장하는 변수
 
 /*지시사항을 따라 작성해주세요*/
-
 
 // 3번(점심 메뉴 찾기)에서 사용한 function
 function findTargetText(text, target_txt) {
@@ -28,7 +27,7 @@ for (let i=0; i<fruits.length; i++) {
     //     sum += 1;
     // }
 
-    // 2-번외 이중 for 문
+    // 2. 번외 이중 for 문
     // for (let j=0; j<fruits[i].length; j++) {
     //     document.write(fruits[i][j]);
     // }
