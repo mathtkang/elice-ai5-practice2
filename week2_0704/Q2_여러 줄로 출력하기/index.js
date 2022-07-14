@@ -33,6 +33,8 @@ document.write("li"+"<br>"+"ke")
 document.write(400+"<br>bus<br>li<br>ke")
 document.write(num+br+str1+br+li+br+ke);
 
+
+
 // 줄바꿈에는 <br> 도 있지만 \n 도 있습니다.
 
 var g = '줄바꿈을\n할 수 있다.';

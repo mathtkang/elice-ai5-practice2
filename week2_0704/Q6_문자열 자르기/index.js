@@ -1,20 +1,27 @@
-var str = "Good morning! Have a nice day."
+let str = "Good morning! Have a nice day."
+let a = str.split(' ')
 
-var a = str.split(' ');
-
-document.write(typeof(a));
+// document.write(a); // [Good,morning!,Have,a,nice,day]
+document.write(typeof(a)+"<br>");
 document.write(a[0]);
+// 여기까지 정답 코드
 
 
-const str = "apple banana orange";
+let str2 = "#apple #banana #orange";
+let a2 = str2.split(' ')
+let a3 = str2.split('#')
 
-const arr = str.split(" ");
+document.writeln(a2.length); // 3
+document.writeln(a3.length); // 4
 
-document.writeln(arr.length); // 3
-document.writeln(arr[0]); // apple
-document.writeln(arr[1]); // banana
-document.writeln(arr[2]); // orange
+document.writeln(a2[0]); // #apple
+document.writeln(a2[1]); // #banana
+document.writeln(a2[2]); // #orange
 
+console.log(a3[0]); // (빈칸)
+document.writeln(a3[1]); // apple
+document.writeln(a3[2]); // banana
+document.writeln(a3[3]); // orange
 
 
 

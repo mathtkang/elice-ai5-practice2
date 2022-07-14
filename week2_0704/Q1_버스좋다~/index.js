@@ -1,7 +1,7 @@
 // step1) 문제 풀기
-var number = 400
-var string1 = "bus"
-var string2 = "like"
+let number = 400
+let string1 = "bus"
+let string2 = "like"
 
 document.write(number)
 document.write(string1)

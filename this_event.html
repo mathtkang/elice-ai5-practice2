@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <button onclick={onLogin}>
+                <span>Google</span>
+            </button>
+        </li>
+        <li></li>
+    </ul>
+<script>
+//https://velog.io/@edie_ko/JavaScript-event-target%EA%B3%BC-currentTarget%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90
+//https://velog.io/@thyoondev/this-event.currentTarget-event.target-%EC%B0%A8%EC%9D%B4%EC%A0%90
+
+    const onLogin = (event) => {
+        console.log(event.target);
+        console.log(event.currentTarget);
+    };
+</script>
+</body>
+
+</html>
